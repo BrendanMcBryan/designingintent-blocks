@@ -1,14 +1,91 @@
 /*!********************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/sparkcontactform/style.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************/
-/**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
-.wp-block-designingintent-blocks-designingintent-blocks {
-  background-color: #21759b;
-  color: #fff;
-  padding: 2px;
+* {
+  box-sizing: border-box;
+}
+
+.section__contact {
+  margin: auto;
+}
+
+.contact__title,
+.contact__form {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  z-index: 200;
+}
+
+.contact__title > p {
+  color: white;
+  margin-bottom: 0;
+}
+.contact__title > p a {
+  color: white;
+  cursor: pointer;
+}
+.contact__title > p a:hover {
+  text-decoration: underline;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+}
+.grid button {
+  margin-right: auto;
+  margin-left: 12px;
+}
+
+.form-item {
+  width: 49%;
+  margin: 12px;
+  text-transform: none;
+}
+.form-item input {
+  width: 100%;
+  padding: 12px;
+  color: white;
+  border: white 1px solid;
+  background-color: transparent;
+}
+
+::-moz-placeholder {
+  color: white;
+  opacity: 0.9;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.9;
+}
+
+button {
+  padding: 12px;
+  border-radius: 0;
+  color: white;
+  background: linear-gradient(67.8deg, #120501, #161415, #252627, #01100c);
+  background-size: 135% 135%;
+  animation: button-gradient-animation 4s ease infinite;
+  opacity: 0.95;
+  border: none;
+  text-transform: uppercase;
+}
+button:hover {
+  /* background-color: red; */
+  opacity: 1;
+  border: 1px solid white;
+}
+
+@keyframes button-gradient-animation {
+  0% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 10% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }

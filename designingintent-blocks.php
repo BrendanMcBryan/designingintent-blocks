@@ -27,7 +27,10 @@ if (!defined('ABSPATH')) {
  */
 function designingintent_blocks_designingintent_blocks_block_init()
 {
+
+	wp_localize_script('wp-editor', 'designingintentblocksdata', array('pluginPath' => plugins_url()));
+
 	register_block_type(__DIR__ . '/build/sparkcontactform');
-	register_block_type(__DIR__ . '/build/secondblock');
+	register_block_type(__DIR__ . '/build/meigsspiral');
 }
 add_action('init', 'designingintent_blocks_designingintent_blocks_block_init');

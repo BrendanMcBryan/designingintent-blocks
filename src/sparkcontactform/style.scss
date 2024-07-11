@@ -1,12 +1,87 @@
-/**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
+* {
+	box-sizing: border-box;
+}
 
-.wp-block-designingintent-blocks-designingintent-blocks {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+.section__contact {
+	// background-color: black;
+	margin: auto;
+}
+.contact__title,
+.contact__form {
+	width: 100%;
+	max-width: 800px;
+	text-align: center;
+	z-index: 200;
+}
+
+.contact__title > p {
+	color: white;
+	margin-bottom: 0;
+
+	a {
+		color: white;
+		cursor: pointer;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.grid {
+	display: flex;
+	justify-content: space-between;
+
+	button {
+		margin-left: auto;
+		margin-right: 12px;
+	}
+}
+
+.form-item {
+	width: 49%;
+	margin: 12px;
+	text-transform: none;
+
+	input {
+		width: 100%;
+		padding: 12px;
+		color: white;
+		border: white 1px solid;
+		background-color: transparent;
+	}
+}
+
+::placeholder {
+	color: white;
+	opacity: 0.9;
+}
+
+button {
+	padding: 12px;
+	border-radius: 0;
+	color: white;
+	background: linear-gradient(-67.8deg, #120501, #161415, #252627, #01100c);
+	background-size: 135% 135%;
+	animation: button-gradient-animation 4s ease infinite;
+	opacity: 0.95;
+	border: none;
+	text-transform: uppercase;
+
+	&:hover {
+		/* background-color: red; */
+		opacity: 1;
+		border: 1px solid white;
+	}
+}
+
+@keyframes button-gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 90% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

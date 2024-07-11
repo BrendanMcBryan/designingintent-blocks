@@ -9,3 +9,9 @@
 .wp-block-designingintent-blocks-designingintent-blocks {
   border: 1px dotted #f00;
 }
+
+.editorblock {
+  padding: 20px;
+  background-color: lightcyan;
+  margin: 20px;
+}

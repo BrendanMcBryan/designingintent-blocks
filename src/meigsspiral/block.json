@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "designingintent-blocks/meigsspiral",
+	"version": "0.1.0",
+	"title": "1214 Meigs Spiral Design Element",
+	"category": "widgets",
+	"icon": "filter",
+	"description": "This block is for placing a 1214 Meigs Spiral element on the page",
+	"example": {},
+	"attributes": {
+		"opacity": { "type": "number", "default": 15 },
+		"width": { "type": "number", "default": 33 },
+		"rotationSpeed": { "type": "number", "default": 1 },
+
+		"position": {
+			"type": "object",
+			"default": {
+				"top": { "type": "number", "default": 0 }
+			}
+		}
+	},
+	"supports": {
+		"html": false,
+		"interactivity": true
+	},
+	"textdomain": "designingintent-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

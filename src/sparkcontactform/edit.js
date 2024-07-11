@@ -31,8 +31,10 @@ import "./editor.scss";
  */
 export default function Edit() {
 	return (
-		<p {...useBlockProps()}>
-			{__("this is the first Block", "designingintent-blocks")}
-		</p>
+		<div {...useBlockProps()}>
+			<div className="editorblock">
+				<p>This is the editor view of the Spark contact form.</p>
+			</div>
+		</div>
 	);
 }
