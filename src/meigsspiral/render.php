@@ -1,16 +1,22 @@
 <?php
 
-/**
- * @see https://github.com/WordPress/gutenberg/blob/trunk/docs/reference-guides/block-api/block-metadata.md#render
- */
+// $ourContext = array("showSkyColor" => false, "showGrassColor" => false, "attributes" => $attributes);
+
+
+
+$spiralUrl =
+	plugins_url() .
+	"/designingintent-blocks/assets/images/Meighs-Spiral.webp";
+
+
+
 ?>
-<div <?php echo get_block_wrapper_attributes(); ?>>
 
-	<?php $spiralUrl =
-		plugins_url() .
-		"/designingintent-blocks/assets/images/Meighs-Spiral.webp";
-	?>
+<div data-wp-interactive="meigselementstore" <?php echo wp_interactivity_data_wp_context($attributes) ?>>
 
-	<div class="meigsSpiral" style="width: <?php echo $attributes['width'] ?>%"><img src='<?php echo $spiralUrl ?>' alt="Design Element"></div>
+
+
+	<img src="<?php echo $spiralUrl ?>" class="meigsSpiral" alt="meigsSpiral" style="width: <?php echo $attributes['width'] ?>%; opacity: <?php echo $attributes['opacity'] ?>%; top: <?php echo $attributes['top'] ?>%; left: <?php echo $attributes['left'] ?>%;" />
+
 
 </div>

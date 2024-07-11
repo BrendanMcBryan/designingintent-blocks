@@ -79,15 +79,15 @@ export default function Edit({ attributes, setAttributes }) {
 				<PanelBody title="Position">
 					<RangeControl
 						label="Top"
-						value={attributes.position.top}
-						onChange={(value) => setAttributes({ position: { top: value } })}
+						value={attributes.top}
+						onChange={(value) => setAttributes({ top: value })}
 						min={-50}
 						max={60}
 					></RangeControl>
 					<RangeControl
 						label="Left"
-						value={attributes.position.left}
-						onChange={(value) => setAttributes({ position: { left: value } })}
+						value={attributes.left}
+						onChange={(value) => setAttributes({ left: value })}
 						min={-95}
 						max={95}
 					></RangeControl>
@@ -97,12 +97,12 @@ export default function Edit({ attributes, setAttributes }) {
 				<img
 					src={spiralUrl}
 					className="meigsSpiral__editor-image"
-					alt=""
+					alt="meigsSpiral"
 					style={{
 						width: `${attributes.width}%`,
 						opacity: `${attributes.opacity}%`,
-						top: `${attributes.position.top}%`,
-						left: `${attributes.position.left}%`,
+						top: `${attributes.top}%`,
+						left: `${attributes.left}%`,
 					}}
 				/>
 			</div>

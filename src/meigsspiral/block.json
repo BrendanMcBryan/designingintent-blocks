@@ -12,13 +12,8 @@
 		"opacity": { "type": "number", "default": 15 },
 		"width": { "type": "number", "default": 33 },
 		"rotationSpeed": { "type": "number", "default": 1 },
-
-		"position": {
-			"type": "object",
-			"default": {
-				"top": { "type": "number", "default": 0 }
-			}
-		}
+		"top": { "type": "number", "default": 0 },
+		"left": { "type": "number", "default": 0 }
 	},
 	"supports": {
 		"html": false,

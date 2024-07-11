@@ -6,26 +6,7 @@
  */
 
 .meigsSpiral {
-	background-color: darkgray;
-}
-.designElement__big {
+	z-index: -10;
+	background-color: transparent;
 	position: absolute;
-	bottom: -5%;
-	left: -15%;
-	opacity: 0.15;
-}
-
-.designElement__big > img {
-	width: 63%;
-}
-
-.designElement__small {
-	position: absolute;
-	left: 80%;
-	top: 8%;
-	opacity: 0.2;
-}
-
-.designElement__small > img {
-	width: 100%;
 }
